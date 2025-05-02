@@ -11,9 +11,9 @@ export default function MentionsLegales() {
       <p>
         Ce site est un blog personnel édité à titre non professionnel par :
         <br />
-        Nom : G. [Tu peux garder l’anonymat]
+        Nom : Geraldo
         <br />
-        Email de contact : [ton adresse email]
+        Email de contact : gerald-f@hotmail.fr
       </p>
 
       <h2>Hébergement</h2>
