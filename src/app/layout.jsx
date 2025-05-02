@@ -25,6 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="h-full">
+      <head></head>
       <body className="flex min-h-full flex-col">
         <Header />
         <Navbar />
