@@ -20,6 +20,7 @@ import "./globals.css";
 export const metadata = {
   title: "Nos carnets de voyage",
   description: "Nos voyages",
+  name: "viewport",
 };
 
 export default function RootLayout({ children }) {
