@@ -2,7 +2,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import "./globals.css";
-
 // const poppins = Poppins({
 //   variable: "--font-poppins",
 //   subsets: ["latin"],
@@ -31,6 +30,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navbar />
         <main className="grow">{children}</main>
+        <Analytics />
         <Footer />
       </body>
     </html>
