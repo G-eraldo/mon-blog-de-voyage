@@ -43,7 +43,7 @@ export default function Home() {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center place-items: center gap-10 mb-20">
       {photos.map((photo) => (
         <div
-          className="border-2 border-amber-50 rounded-xl w-60 text-center mb-7 hover:bg-amber-100/50 cursor-pointer "
+          className="border-2 border-amber-50 rounded-xl w-60 text-center mb-7 hover:bg-amber-100/50 hover:border-2xl cursor-pointer "
           key={photo.id}
         >
           <Link
