@@ -1,20 +1,23 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-export default function page() {
+export default function Page() {
   const messageRef = useRef(null);
+
   async function handleSubmit(e) {
     e.preventDefault();
     try {
       const result = await emailjs.sendForm(
-        "service_ns15fq2",
-        "template_bfh47am",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         e.target,
-        "bcxHquc7XQFLSlbmG"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
       messageRef.current.textContent = "Message envoyé ✅";
       e.target.reset();
     } catch (error) {
+      console.error("EmailJS error:", error);
       messageRef.current.textContent = "Un problème est survenu";
     }
   }
