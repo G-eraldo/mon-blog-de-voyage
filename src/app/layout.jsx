@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" className="h-full">
+    <html lang="fr" className="h-full" data-theme="dark">
       <head></head>
       <body className="flex min-h-full flex-col">
         <Header />
