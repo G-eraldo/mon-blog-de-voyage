@@ -24,30 +24,30 @@ export default function page() {
       onSubmit={handleSubmit}
       className="flex flex-col items-center gap-6 text-amber-50"
     >
-      <label className="form-control w-full max-w-md floating-label mb-4">
+      <label className="floating-label">
         <span>Ton prénom</span>
         <input
           type="text"
           placeholder="Ton prénom"
-          className="input input-md w-full"
+          className="input input-md"
           name="name"
         />
       </label>
-      <label className="form-control w-full max-w-md floating-label mb-4">
+      <label className="floating-label">
         <span>Ton Email</span>
         <input
           type="mail"
           placeholder="Ton Email"
-          className="input input-md w-full"
+          className="input input-md"
           name="email"
         />
       </label>
-      <label className="form-control w-full max-w-md floating-label mb-4">
+      <label className="floating-label">
         <span>Votre message</span>
         <textarea
           type="textarea"
           placeholder="Votre message"
-          className="input input-md text-wrap h-20 w-full"
+          className="input input-md text-wrap h-20"
           name="message"
         />
       </label>
